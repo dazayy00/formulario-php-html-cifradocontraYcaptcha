@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     //catcha
     $ip = $_SERVER['REMOTE_ADDR'];
     $captcha = $_POST['g-recaptcha-response'];
-    $secretkey = "6Lfd_HYqAAAAAO92ZFPxRnCi0hWfKYT8se0U16kT";
+    $secretkey = "quita el secretkey";
 
     $respuesta = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secretkey&response=$captcha&remoteip=$ip");
 
