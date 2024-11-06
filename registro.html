@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro usuarios de nahuatl</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="contenedor-formulario">
+        <form action="procesar_registro.php" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" required>
+            
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" required >
+
+            <label for="password">Contraseña:</label>
+            <input type="password" name="password" id="password" required>
+
+            <br>
+            <div class="">
+                <div class="g-recaptcha"  data-sitekey="6Lfd_HYqAAAAAIe7fmLu9LkmaYfyJj2miR9wBnJe"></div>
+            </div>
+            <br>
+            <button type="submit">Registrarse</button>
+        </form>
+    </div>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+
+</body>
+</html>
+
